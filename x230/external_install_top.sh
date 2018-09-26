@@ -131,7 +131,7 @@ fi
 programmer=""
 if [ "${FLASHER}" = "rpi" ] ; then
 	echo "Ok. Run this on a Rasperry Pi."
-	programmer="linux_spi:dev=/dev/spidev0.0,spispeed=128"
+	programmer="linux_spi:dev=/dev/spidev0.0,spispeed=3000"
 elif [ "${FLASHER}" = "ch341a" ] ; then
 	echo "Ok. Connect a CH341A programmer"
 	programmer="ch341a_spi"
